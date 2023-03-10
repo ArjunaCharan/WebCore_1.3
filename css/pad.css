@@ -1,9 +1,9 @@
 @font-face {
     font-family: "TT Lakes Medium";
-    src: url("./../fonts/TTLakes-Medium/TTLakes-Medium.eot");
-    src: url("./../TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("./../fonts/TTLakes-Medium/TTLakes-Medium.woff") format("woff"),
-    url("./../fonts/TTLakes-Medium/TTLakes-Medium.ttf") format("truetype");
+    src: url("fonts/TTLakes-Medium/TTLakes-Medium.eot");
+    src: url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Medium/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium/TTLakes-Medium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     }
@@ -148,6 +148,11 @@ body {
     display: flex;
     margin-left: 16px;
     margin-right: 16px;
+    align-items: center;
+    border: 0px;
+    width: max-content;
+    background-color: inherit;
+    cursor: pointer;
 }
 
 .phone {
