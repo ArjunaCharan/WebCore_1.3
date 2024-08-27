@@ -1,9 +1,9 @@
 @font-face {
     font-family: "TT Lakes Medium";
-    src: url("./../fonts/TTLakes-Medium/TTLakes-Medium.eot");
+    src: url("fonts/TTLakes-Medium/TTLakes-Medium.eot");
     src: url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("./../fonts/TTLakes-Medium/TTLakes-Medium.woff") format("woff"),
-    url("./../fonts/TTLakes-Medium/TTLakes-Medium.ttf") format("truetype");
+    url("fonts/TTLakes-Medium/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium/TTLakes-Medium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     }
@@ -56,6 +56,9 @@ body {
 .title__left {
     display: flex;
     justify-content: flex-start;
+    background-image: url("../img/highlight.svg");
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .title__item:first-child {
@@ -72,6 +75,7 @@ body {
     font-size: 28px;
     letter-spacing: -0.6px;
     vertical-align: middle;
+    margin-left: 33px;
 }
 
 
@@ -80,16 +84,16 @@ body {
     overflow: auto;
     margin-top: 24px;
     margin-left: 16px;
-    margin-right: 16px;;
+    margin-right: 16px;
+    list-style: none;
 }
 
 .slide-menu::-webkit-scrollbar {
     width: 0;
-  }
+}
 
 .slide-menu__item {
     white-space: nowrap;
-    height: 40px;
     border: 0;
     min-width: auto;
     font-family: "TT Lakes Medium";
@@ -132,7 +136,7 @@ body {
     margin: 0;
     width: 100%;
     min-width: 320px;
-    max-width: 767.98px;   
+    max-width: 767.98px;
 }
 
 .info_expand {

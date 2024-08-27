@@ -9,4 +9,4 @@ let button=document.querySelectorAll(".slide-menu__item");
             if (!button[i].classList.contains("slide-menu__item_active")) 
             button[i].classList.add('slide-menu__item_active');
         
-  };
+};

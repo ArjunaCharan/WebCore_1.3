@@ -1,9 +1,9 @@
 @font-face {
     font-family: "TT Lakes Medium";
-    src: url("./../fonts/TTLakes-Medium/TTLakes-Medium.eot");
+    src: url("fonts/TTLakes-Medium/TTLakes-Medium.eot");
     src: url("TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("./../fonts/TTLakes-Medium/TTLakes-Medium.woff") format("woff"),
-    url("./../fonts/TTLakes-Medium/TTLakes-Medium.ttf") format("truetype");
+    url("fonts/TTLakes-Medium/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium/TTLakes-Medium.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     }
@@ -29,11 +29,11 @@ body {
     margin-top: 24px;
     margin-left: 32px;
     margin-right: 25px;
+    list-style: none;
 }
 
 .slide-menu__item {
     white-space: nowrap;
-    height: 40px;
     border: 0;
     min-width: auto;
     font-family: "TT Lakes Medium";
@@ -68,6 +68,9 @@ body {
 .title__left {
     display: flex;
     justify-content: flex-start;
+    background-image: url("../img/highlight.svg");
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .title__right {
@@ -82,12 +85,25 @@ body {
 }
 
 .title__right .title__item {
-    display: flex;
-    align-items: center;
+    height: 40px;
+    width: 173px;
+    text-align: start;
     margin-right: 32px;
     border: 0;
     background-color: inherit;
     cursor: pointer;
+}
+
+.title__right .title__item:first-child {
+    margin-right: 0;
+    background: no-repeat url("../img/repair.svg") left 123.5px top 10px,
+                no-repeat url("../img/red_background_circle.svg") left 113px top;
+}
+
+.title__right .title__item:last-child {
+    margin-right: 0;
+    background: no-repeat url("../img/status.svg") left 125.5px top 10px,
+                no-repeat url("../img/red_background_circle.svg") left 113px top;
 }
 
 .title__right .title__item:last-child {
@@ -103,6 +119,7 @@ body {
     font-size: 28px;
     letter-spacing: -0.6px;
     vertical-align: middle;
+    margin-left: 33px;
 }
 
 
